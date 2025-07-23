@@ -3,6 +3,6 @@ uvicorn[standard]
 pandas
 numpy
 python-constraint==1.4.0
-matplotlib==3.8.4
+matplotlib
 seaborn==0.13.2
 networkx==3.3
