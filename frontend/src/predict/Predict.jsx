@@ -48,7 +48,7 @@ export default function Predict() {
     function sendPredictionRequest(formData) {
     setLoading(true); 
 
-    axios.post('http://localhost:8000/api/predict/', formData)
+    axios.post('https://aicropprediction-6.onrender.com/api/predict/', formData)
         .then(response => {
             navigate('/result', { state: { result: response.data, userInputs: formData } });
         })
