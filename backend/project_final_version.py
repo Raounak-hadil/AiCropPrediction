@@ -187,7 +187,7 @@ def greedy_search_k_best(problem, k=3, max_iterations=10000):
     seen_crops = set()
     iteration = 0
     while frontier and iteration < max_iterations and len(goal_nodes) < k:
-        print(iteration)
+        print(f"[Greedy] Iteration: {iteration}")
         iteration += 1
         _, node = heapq.heappop(frontier)
         node_hash = hash(node)
