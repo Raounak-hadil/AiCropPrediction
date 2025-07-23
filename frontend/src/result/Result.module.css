@@ -1,0 +1,5 @@
+.result {
+    background-image: url('./formImage.png');
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,7 @@
+.about {
+    padding: 10px;
+    background-image: url('./top.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

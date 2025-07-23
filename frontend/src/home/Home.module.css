@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url('./top_pic1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

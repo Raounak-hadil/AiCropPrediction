@@ -1,0 +1,8 @@
+fastapi==0.110.2
+uvicorn[standard]
+pandas==2.2.2
+numpy==1.26.4
+python-constraint==1.4.0
+matplotlib==3.8.4
+seaborn==0.13.2
+networkx==3.3
