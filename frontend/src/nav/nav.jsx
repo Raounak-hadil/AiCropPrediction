@@ -24,7 +24,13 @@ export default function Nav() {
           <ul className="flex flex-col justify-center items-center text-white gap-8">
             <Link to="/" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}>Home</Link>
             <Link to="/about" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}>AboutUs</Link>
-            <a href="/#contact" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}>ContactUs</a>
+          <Link 
+              to="/#contact" 
+              style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}
+              onClick={() => window.location.pathname === '/' && 
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} >
+              ContactUs
+            </Link>
             <Link to="/predict" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }} className="bg-white rounded-xl text-[#1B5624] px-5 py-1">Predict</Link>
           </ul>
         </div>
@@ -35,7 +41,13 @@ export default function Nav() {
             <ul className="flex justify-center items-center text-white gap-8">
               <Link to="/" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}>Home</Link>
               <Link to="/about" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}>AboutUs</Link>
-              <a href="#contact" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}>ContactUs</a>
+              <Link 
+                  to="/#contact" 
+                  style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}
+                  onClick={() => window.location.pathname === '/' && 
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} >
+                  ContactUs
+                </Link>
               <Link to="/predict" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }} className="bg-white rounded-xl text-[#1B5624] px-5 py-1">Predict</Link>
             </ul>
           </div>
