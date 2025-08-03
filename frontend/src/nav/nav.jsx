@@ -36,7 +36,7 @@ export default function Nav() {
         </div>
       </div>
       <div className="hidden md:flex justify-between items-center text-white px-5 text-2xl font-bold">
-          <Link to="/" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}>logo</Link>
+          <Link to="/" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}>AiPredict</Link>
           <div>
             <ul className="flex justify-center items-center text-white gap-8">
               <Link to="/" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0)' }}>Home</Link>
