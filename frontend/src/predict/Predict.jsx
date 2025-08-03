@@ -185,7 +185,7 @@ export default function Predict() {
         {loading && (
         <div className="fixed inset-0 bg-opacity-40 flex justify-center items-center z-50">
             <div className="bg-white text-[#455429] px-6 py-4 rounded-xl shadow-xl text-xl font-semibold">
-            ⏳ Please wait, it could take a while (average: 20 minutes)...
+            ⏳ Please wait, it could take a while ...
             </div>
         </div>
         )}
