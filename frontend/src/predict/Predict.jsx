@@ -154,7 +154,7 @@ export default function Predict() {
                 </div>  
             </form>
             {/* MODAL UPDATED */}
-            <div className={`${styles.appear} ${appear ? '' : 'hidden'} fixed top-40 left-1/2 transform -translate-x-1/2 z-50 w-[80%] max-w-4xl p-10 border border-white bg-[rgba(250,255,241,0.95)] rounded-xl`}>
+            <div className={`${styles.appear} ${appear ? '' : 'hidden'} fixed top-24 left-1/2 transform -translate-x-1/2 z-50 w-[80%] max-w-4xl p-10 border border-white bg-[rgba(250,255,241,0.95)] rounded-xl`}>
                 {!showAdvanced ? (
                     <div className="flex flex-wrap justify-center items-center gap-5">
                         <button onClick={lastChoice} value="csp" disabled={loading} className="bg-[#B3D37A] text-[#455429] py-3 px-7 rounded-xl" id="csp">CSP</button>
@@ -165,18 +165,18 @@ export default function Predict() {
                 ) : (
                     <div className="flex flex-col justify-center items-center gap-5">
                         <p className="text-red-600 text-center mb-4 font-semibold">
-                            ⚠ Warning: These methods can take a long time (sometimes 20+ minutes)!
+                            ⚠ Warning: These methods can take a long time !
                         </p>
-                        <div className="flex flex-wrap justify-center items-center gap-5">
+                        <div className="flex flex-wrap justify-center items-center gap-5 pb-4">
                             <button onClick={lastChoice} value="astar" disabled={loading} className="bg-[#B3D37A] text-[#455429] py-3 px-7 rounded-xl" id="a_star">A star</button>
                             <button onClick={lastChoice} value="greedy" disabled={loading} className="bg-[#B3D37A] text-[#455429] py-3 px-7 rounded-xl" id="greedy">Greedy</button>
                             <button onClick={lastChoice} value="genetic" disabled={loading} className="bg-[#B3D37A] text-[#455429] py-3 px-7 rounded-xl" id="genetic">Genetic</button>
+                            <button 
+                                onClick={() => setShowAdvanced(false)} 
+                                className="bg-[#B3D37A] text-[#455429] py-3 px-7 rounded-xl">
+                                ⬅ Back
+                            </button>
                         </div>
-                        <button 
-                            onClick={() => setShowAdvanced(false)} 
-                            className="mt-4 text-sm text-[#455429] underline block">
-                            ⬅ Back
-                        </button>
 
                     </div>
                 )}
