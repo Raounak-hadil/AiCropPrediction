@@ -172,9 +172,12 @@ export default function Predict() {
                             <button onClick={lastChoice} value="greedy" disabled={loading} className="bg-[#B3D37A] text-[#455429] py-3 px-7 rounded-xl" id="greedy">Greedy</button>
                             <button onClick={lastChoice} value="genetic" disabled={loading} className="bg-[#B3D37A] text-[#455429] py-3 px-7 rounded-xl" id="genetic">Genetic</button>
                         </div>
-                        <button onClick={() => setShowAdvanced(false)} className="mt-4 text-sm text-[#455429] underline">
+                        <button 
+                            onClick={() => setShowAdvanced(false)} 
+                            className="fixed bottom-5 left-1/2 transform -translate-x-1/2 text-sm text-[#455429] underline bg-[rgba(250,255,241,0.95)] px-4 py-2 rounded-lg shadow-lg z-50">
                             ⬅ Back
                         </button>
+
                     </div>
                 )}
             </div>
